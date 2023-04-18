@@ -1,0 +1,52 @@
+{
+  "name": "Midnight Blue",
+  "description": "A cool and calming theme with touches of blue.",
+  "authors": [
+    {
+      "name": "bn",
+      "id": "562800087693131776"
+    }
+  ],
+  "semanticColors": {
+    "BACKGROUND_PRIMARY": ["#101014"],
+    "BACKGROUND_SECONDARY": ["#17161b"],
+    "BACKGROUND_SECONDARY_ALT": ["#17161b"],
+    "BACKGROUND_TERTIARY": ["#101014"],
+    "BACKGROUND_ACCENT": ["#608bf7"],
+    "BACKGROUND_FLOATING": ["#17161b"],
+    "BACKGROUND_MOBILE_PRIMARY": ["#14161A"],
+    "BACKGROUND_MOBILE_SECONDARY": ["#17161b"],
+    "BACKGROUND_MODIFIER_SELECTED": ["#2c429d"],
+    "BACKGROUND_MODIFIER_ACTIVE": ["#608bf7"],
+    "BACKGROUND_MODIFIER_ACCENT": ["#608bf7"],
+    "BACKGROUND_MENTIONED": ["#293334"],
+    "BACKGROUND_MENTIONED_HOVER": ["#060e2e"],
+
+    "SCROLLBAR_THIN_THUMB": ["#1E2233"],
+    "SCROLLBAR_THIN_TRACK": ["transparent"],
+    "SCROLLBAR_AUTO_THUMB": ["#1E2233"],
+    "SCROLLBAR_AUTO_TRACK": ["#1E2233"],
+    "CHANNEL_ICON": ["#608bf7"],
+    "CHANNELTEXTAREA_BACKGROUND": ["#23283D"],
+    "CHAT_BACKGROUND": ["#17161b"],
+    "TEXT_DANGER": ["#608bf7"]
+  },
+  "rawColors": {
+    "PRIMARY_100": "#d3d9ec",
+    "PRIMARY_300": "#B6B6B6",
+    "PRIMARY_360": "#C8C8C8",
+    "PRIMARY_500": "#608bf7",
+    "PRIMARY_600": "#101014",
+    "PRIMARY_630": "#1A1B21",
+    "PRIMARY_700": "#101014",
+    "PRIMARY_800": "#151515",
+    "PRIMARY_900": "#1F2125",
+    "BRAND_260": "#608bf7",
+    "BRAND_500": "#2c429d",
+    "BRAND_900": "#2c429d",
+    "WHITE_900": "#d3d9ec",
+    "YELLOW_300": "#608bf7",
+    "RED_400": "#608bf7"
+  },
+  "spec": 2
+}
