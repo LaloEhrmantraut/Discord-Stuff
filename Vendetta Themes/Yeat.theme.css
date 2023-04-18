@@ -1,0 +1,62 @@
+/**
+ * @name Yeat
+ * @version 1.0.0
+ * @description Twizzy Rich
+ * @author LaloEhrmantraut
+ */
+
+/* All of the code are taken from Vencord Discord server */
+
+/* Re-round Spotify Status Images */
+[class^=assetsLargeImageSpotify-]{border-radius:8px;}
+
+/* remove login artwork */
+svg.artwork-L5TAwQ {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* thanks @The Sun for this ungodly string of nonsense in my eyes */
+[data-list-item-id*="chat-messages_"]:not(:has(> [class*="contents"] > [class*="isSending"])) {
+  animation: slide-in 0.6s;
+}
+[data-list-item-id*="chat-messages_"]:has(> [class*="contents"] > [class*="isSending"]) {
+    opacity: 0;
+    animation: slide-in 0.6s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+/* thanks @Deko for all this easy code i wrote 100% myself */
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* thing */
+body:before {
+  position: fixed;
+  bottom: 0; right: 0;
+  width: 32px; height: 32px;
+  margin: 16px;
+  z-index: 999;
+  content: url(https://cdn.discordapp.com/emojis/1024751454751309996.gif?size=48&name=ducc&quality=lossless);
+}
+
+/* full note */
+[class^="note-"] > [class^="textarea-"] {
+    max-height: unset;
+}
+
+/* no super reaction */
+[class*=effectsWrapper] {
+  display: none;
+}
+[class*="hideEmoji-"][class*="hideEmoji-"][class*="hideEmoji-"] {
+    opacity: 1;
+}
