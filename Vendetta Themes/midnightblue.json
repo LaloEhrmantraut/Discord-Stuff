@@ -48,10 +48,9 @@
     "YELLOW_300": "#608bf7",
     "RED_400": "#608bf7"
   },
-  "spec": 2
-}
-
-"plus": {
-	"version": 0,
-	"iconPack": "rosiecord-plumpy"
+  "plus":{
+        "version":"0",
+        "iconpack":"rosiecord-plumpy",
+     },
+    "spec": 2
 }
