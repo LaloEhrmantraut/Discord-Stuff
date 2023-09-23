@@ -47,10 +47,6 @@
     "WHITE_900": "#d3d9ec",
     "YELLOW_300": "#608bf7",
     "RED_400": "#608bf7"
-    },
-    "plus":{
-        "version":"0",
-        "iconpack":"rosiecord-plumpy",
-     },
-    "spec": 2
+  },
+  "spec": 2
 }
