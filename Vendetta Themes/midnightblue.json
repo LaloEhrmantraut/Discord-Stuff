@@ -8,69 +8,28 @@
     }
   ],
   "semanticColors": {
-    "BACKGROUND_PRIMARY": [
-      "#101014"
-    ],
-    "BACKGROUND_SECONDARY": [
-      "#17161b"
-    ],
-    "BACKGROUND_SECONDARY_ALT": [
-      "#17161b"
-    ],
-    "BACKGROUND_TERTIARY": [
-      "#101014"
-    ],
-    "BACKGROUND_ACCENT": [
-      "#608bf7"
-    ],
-    "BACKGROUND_FLOATING": [
-      "#17161b"
-    ],
-    "BACKGROUND_MOBILE_PRIMARY": [
-      "#14161A"
-    ],
-    "BACKGROUND_MOBILE_SECONDARY": [
-      "#17161b"
-    ],
-    "BACKGROUND_MODIFIER_SELECTED": [
-      "#2c429d"
-    ],
-    "BACKGROUND_MODIFIER_ACTIVE": [
-      "#608bf7"
-    ],
-    "BACKGROUND_MODIFIER_ACCENT": [
-      "#608bf7"
-    ],
-    "BACKGROUND_MENTIONED": [
-      "#293334"
-    ],
-    "BACKGROUND_MENTIONED_HOVER": [
-      "#060e2e"
-    ],
-    "SCROLLBAR_THIN_THUMB": [
-      "#1E2233"
-    ],
-    "SCROLLBAR_THIN_TRACK": [
-      "transparent"
-    ],
-    "SCROLLBAR_AUTO_THUMB": [
-      "#1E2233"
-    ],
-    "SCROLLBAR_AUTO_TRACK": [
-      "#1E2233"
-    ],
-    "CHANNEL_ICON": [
-      "#608bf7"
-    ],
-    "CHANNELTEXTAREA_BACKGROUND": [
-      "#23283D"
-    ],
-    "CHAT_BACKGROUND": [
-      "#17161b"
-    ],
-    "TEXT_DANGER": [
-      "#608bf7"
-    ]
+    "BACKGROUND_PRIMARY": ["#101014"],
+    "BACKGROUND_SECONDARY": ["#17161b"],
+    "BACKGROUND_SECONDARY_ALT": ["#17161b"],
+    "BACKGROUND_TERTIARY": ["#101014"],
+    "BACKGROUND_ACCENT": ["#608bf7"],
+    "BACKGROUND_FLOATING": ["#17161b"],
+    "BACKGROUND_MOBILE_PRIMARY": ["#14161A"],
+    "BACKGROUND_MOBILE_SECONDARY": ["#17161b"],
+    "BACKGROUND_MODIFIER_SELECTED": ["#2c429d"],
+    "BACKGROUND_MODIFIER_ACTIVE": ["#608bf7"],
+    "BACKGROUND_MODIFIER_ACCENT": ["#608bf7"],
+    "BACKGROUND_MENTIONED": ["#293334"],
+    "BACKGROUND_MENTIONED_HOVER": ["#060e2e"],
+
+    "SCROLLBAR_THIN_THUMB": ["#1E2233"],
+    "SCROLLBAR_THIN_TRACK": ["transparent"],
+    "SCROLLBAR_AUTO_THUMB": ["#1E2233"],
+    "SCROLLBAR_AUTO_TRACK": ["#1E2233"],
+    "CHANNEL_ICON": ["#608bf7"],
+    "CHANNELTEXTAREA_BACKGROUND": ["#23283D"],
+    "CHAT_BACKGROUND": ["#17161b"],
+    "TEXT_DANGER": ["#608bf7"]
   },
   "rawColors": {
     "PRIMARY_100": "#d3d9ec",
@@ -88,5 +47,6 @@
     "WHITE_900": "#d3d9ec",
     "YELLOW_300": "#608bf7",
     "RED_400": "#608bf7"
-    }
+  },
+  "spec": 2
 }
