@@ -88,14 +88,5 @@
     "WHITE_900": "#d3d9ec",
     "YELLOW_300": "#608bf7",
     "RED_400": "#608bf7"
-    },
-    "plus":{
-        "version":"0",
-        "iconpack":"rosiecord-plumpy",
-        "icons":{
-            "ic_new_pins":["#e64553"],
-            "StatusStreaming": ["#7e64fb"],
-          "StatusMobileOnline": ["#09bd63"]
-     },
-    "spec": 2
-}}
+    }
+}
