@@ -7,207 +7,30 @@
 
 /* All of the code are taken from Vencord Discord server */
 
-/* Re-round Spotify Status Images */
-[class^=assetsLargeImageSpotify-]{border-radius:8px;}
-
-/* Comfy Code, kanged from Comfy but modified be me so you gotta give me credit >:D */
-/* Comfy-Style Spotify Player
- * Kanged and modified code from https://github.com/Comfy-Themes/Discord
- */
-:root {
-  --spotify-vencord-wave-width: 240px;
-  --spotify-vencord-color: var(--spotify);
-  /* Use HSL Values for the next one */
-  --spotify-vencord-text: var(--primary-600-hsl);
-}
-
-@keyframes spotifywave {
-  0% {
-    -webkit-mask-position-x: var(--spotify-vencord-wave-width);
-  }
-  100% {
-    -webkit-mask-position-x: 0;
-  }
-}
-#vc-spotify-player {
-  /* The code below isn't really needed but it looks pretty :3 */
-}
-#vc-spotify-player::before {
-  content: "";
-  position: absolute;
-  height: 25px;
-  z-index: 1;
-  width: var(--spotify-vencord-wave-width);
-  margin-top: -29px;
-  left: 0;
-  background: var(--spotify-vencord-color);
-  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="240" height="25" viewBox="0 0 284 25"><path d="M283.999 15.2776C228.798 15.2776 211.243 -0.0317305 140.048 -0.000164877C69.0475 -0.000164877 51.2975 15.2776 8.58307e-06 15.2776V24.9998H284C284 24.9998 283.999 18.9392 283.999 15.2776Z"/></svg>');
-  animation: spotifywave 8s linear infinite;
-  animation-delay: 0s;
-  opacity: 1;
-}
-#vc-spotify-player#vc-spotify-player {
-  background: var(--spotify-vencord-color);
-  border-bottom: none;
-}
-#vc-spotify-player #vc-spotify-song-title#vc-spotify-song-title,
-#vc-spotify-player .vc-spotify-ellipoverflow.vc-spotify-ellipoverflow,
-#vc-spotify-player .vc-spotify-artist.vc-spotify-artist,
-#vc-spotify-player .vc-spotify-album.vc-spotify-album, #vc-spotify-player .vc-spotify-time-right, #vc-spotify-player .vc-spotify-time-left {
-  color: hsla(var(--spotify-vencord-text)/1);
-}
-#vc-spotify-player#vc-spotify-player [class*=bar-] {
-  background: hsla(var(--spotify-vencord-text)/0.3);
-}
-#vc-spotify-player#vc-spotify-player [class*=barFill] {
-  background: hsla(var(--spotify-vencord-text)/0.7);
-}
-#vc-spotify-player #vc-spotify-progress-bar > [class^=slider] [class^=grabber][class^=grabber] {
-  background-color: var(--spotify-vencord-color);
-  border-color: var(--background-primary);
-  color: var(--interactive-normal);
-  border-width: 2px;
-  height: 8px !important;
-  width: 8px !important;
-}
-#vc-spotify-player .vc-spotify-shuffle-on.vc-spotify-shuffle-on,
-#vc-spotify-player .vc-spotify-repeat-context.vc-spotify-repeat-context,
-#vc-spotify-player .vc-spotify-repeat-track.vc-spotify-repeat-track,
-#vc-spotify-player .vc-spotify-shuffle-on.vc-spotify-shuffle-on:hover,
-#vc-spotify-player .vc-spotify-repeat-context.vc-spotify-repeat-context:hover,
-#vc-spotify-player .vc-spotify-repeat-track.vc-spotify-repeat-track:hover {
-  color: hsla(var(--spotify-vencord-text)/1);
-}
-#vc-spotify-player .vc-spotify-repeat-off.vc-spotify-repeat-off.vc-spotify-repeat-off,
-#vc-spotify-player .vc-spotify-shuffle-off.vc-spotify-shuffle-off.vc-spotify-shuffle-off {
-  color: hsla(var(--spotify-vencord-text)/0.5);
-}
-#vc-spotify-player .vc-spotify-button.vc-spotify-button {
-  transition: background 0.1s;
-  color: hsla(var(--spotify-vencord-text)/1);
-}
-#vc-spotify-player .vc-spotify-button.vc-spotify-button:hover {
-  background: hsla(var(--spotify-vencord-text)/0.3);
-  color: hsla(var(--spotify-vencord-text)/1);
-}
-
-[class*=wrapper-]:not(:empty) + #vc-spotify-player {
-  margin-top: 27px;
-}
-
-[class*=panels-] [class*=wrapper-] [class*=container-] {
-  border-bottom: none;
-}
-
-#vc-spotify-player + [class*=container-] {
-  background: var(--spotify-vencord-color);
-}
-#vc-spotify-player + [class*=container-] [class*=button-][class*=button-][class*=button-],
-#vc-spotify-player + [class*=container-] [class*=title-][class*=title-][class*=title-] {
-  color: hsla(var(--spotify-vencord-text)/1);
-}
-#vc-spotify-player + [class*=container-] [class*=subtext-] {
-  color: hsla(var(--spotify-vencord-text)/0.7) !important;
-}
-#vc-spotify-player + [class*=container-] [class*=withTagAsButton-]:hover,
-#vc-spotify-player + [class*=container-] [class*=withTagless]:hover,
-#vc-spotify-player + [class*=container-] [class*=button-][class*=enabled-]:hover {
-  background-color: hsla(var(--spotify-vencord-text)/0.2);
-}
-
-#vc-spotify-player + [class*=container-] rect[fill="#f23f43"],
-#vc-spotify-player + [class*=container-] foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
-  fill: hsla(var(--spotify-vencord-text)/1) !important;
-  background-color: hsla(var(--spotify-vencord-text)/1) !important;
-}
-#vc-spotify-player + [class*=container-] rect[fill="rgba(242, 63, 67, 1)"] {
-  fill: hsla(var(--spotify-vencord-text)/1) !important;
-}
-#vc-spotify-player + [class*=container-] rect[fill="#23a55a"],
-#vc-spotify-player + [class*=container-] foreignObject[mask="url(#svg-mask-status-online)"] > div,
-#vc-spotify-player + [class*=container-] div[class^=dotOnline],
-#vc-spotify-player + [class*=container-] i[class^=statusOnline-] {
-  fill: hsla(var(--spotify-vencord-text)/1) !important;
-  background-color: hsla(var(--spotify-vencord-text)/1) !important;
-}
-#vc-spotify-player + [class*=container-] rect[fill="rgba(35, 165, 90, 1)"] {
-  fill: hsla(var(--spotify-vencord-text)/1) !important;
-}
-#vc-spotify-player + [class*=container-] rect[fill="#f0b232"],
-#vc-spotify-player + [class*=container-] foreignObject[mask="url(#svg-mask-status-idle)"] > div {
-  fill: hsla(var(--spotify-vencord-text)/1) !important;
-  background-color: hsla(var(--spotify-vencord-text)/1) !important;
-}
-#vc-spotify-player + [class*=container-] rect[fill="rgba(240, 178, 50, 1)"] {
-  fill: hsla(var(--spotify-vencord-text)/1) !important;
-}
-#vc-spotify-player + [class*=container-] rect[fill="#82858f"],
-#vc-spotify-player + [class*=container-] foreignObject[mask="url(#svg-mask-status-offline)"] > div,
-#vc-spotify-player + [class*=container-] foreignObject[mask="url(#svg-mask-status-offline)"] > rect,
-#vc-spotify-player + [class*=container-] div[class^=dotOffline],
-#vc-spotify-player + [class*=container-] i[class^=statusOffline-] {
-  fill: hsla(var(--spotify-vencord-text)/1) !important;
-  background-color: hsla(var(--spotify-vencord-text)/1) !important;
-}
-#vc-spotify-player + [class*=container-] rect[fill="rgba(130, 133, 143, 1)"] {
-  fill: hsla(var(--spotify-vencord-text)/1) !important;
-}
-
-[class*=panels-] [class*=activityPanel-] {
-  border-bottom: none;
-}
-
-[class*=listeningAlong-] {
-  padding-bottom: 24px !important;
-}
-
-/* remove login artwork */
-svg.artwork-L5TAwQ {
-    display: none !important;
-    visibility: hidden !important;
-}
-
-/* thanks @The Sun for this ungodly string of nonsense in my eyes */
-[data-list-item-id*="chat-messages_"]:not(:has(> [class*="contents"] > [class*="isSending"])) {
-  animation: slide-in 0.6s;
-}
-[data-list-item-id*="chat-messages_"]:has(> [class*="contents"] > [class*="isSending"]) {
-    opacity: 0;
-    animation: slide-in 0.6s;
-    animation-delay: 0.4s;
-    animation-fill-mode: forwards;
-}
-/* thanks @Deko for all this easy code i wrote 100% myself */
-@keyframes slide-in {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
 /* thing */
-body:before {
-  position: fixed;
-  bottom: 0; right: 0;
-  width: 32px; height: 32px;
-  margin: 16px;
-  z-index: 999;
-  content: url(https://cdn.discordapp.com/emojis/1024751454751309996.gif?size=48&name=ducc&quality=lossless);
+.modeSelected__487d6 .link__95dc0:before,
+.modeConnected__1c02e .link__95dc0:before {
+  background-color: var(--interactive-active); /* Replace with var(--brand-experiment) for accent color */
+  border-radius: 7px;
 }
-
-/* full note */
-[class^="note-"] > [class^="textarea-"] {
-    max-height: unset;
+.modeSelected__487d6 .icon_eff5d4,
+.modeSelected__487d6:hover .icon_eff5d4,
+.modeConnected__1c02e .icon_eff5d4,
+.modeConnected__1c02e:hover .icon_eff5d4 {
+  --channel-icon: var(--background-primary);
 }
-
-/* no super reaction */
-[class*=effectsWrapper] {
-  display: none;
+.modeConnected__1c02e {
 }
-[class*="hideEmoji-"][class*="hideEmoji-"][class*="hideEmoji-"] {
-    opacity: 1;
-}
+.modeSelected__487d6 .name__8d1ec,
+.modeSelected__487d6:hover .name__8d1ec,
+.modeConnected__1c02e .name__8d1ec,
+.modeConnected__1c02e:hover .name__8d1ec,
+.modeSelected__487d6 .actionIcon_d679b5,
+.modeSelected__487d6:hover .actionIcon_d679b5,
+.modeConnected__1c02e .actionIcon_d679b5,
+.modeConnected__1c02e:hover .actionIcon_d679b5,
+.modeConnected__1c02e .statusText_e0f90b,
+.modeConnected__1c02e .pencilIcon__1ec62,
+.modeConnected__1c02e .hoverable__46c19:hover .statusText_e0f90b,
+.modeConnected__1c02e .hoverable__46c19:hover .pencilIcon__1ec62 {
+  color: var(--background-primary);
